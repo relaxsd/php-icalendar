@@ -32,7 +32,7 @@ trait HasVersion
      *
      * @param string|null    $maxVersion
      *
-     * @return HasVersion
+     * @return $this
      */
     public function setVersion($version, $maxVersion = null)
     {

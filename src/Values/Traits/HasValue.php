@@ -24,7 +24,7 @@ trait HasValue
     /**
      * @param string $value
      *
-     * @return HasValue
+     * @return $this
      */
     public function setValue($value)
     {

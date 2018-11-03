@@ -40,7 +40,7 @@ class XProperty
     /**
      * @param string $xName
      *
-     * @return XProperty
+     * @return $this
      */
     public function setXName($xName)
     {

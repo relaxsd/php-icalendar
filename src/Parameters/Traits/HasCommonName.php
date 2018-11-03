@@ -23,7 +23,7 @@ trait HasCommonName
     /**
      * @param \Relaxsd\ICalendar\Parameters\CommonName|string $commonName
      *
-     * @return HasCommonName
+     * @return $this
      */
     public function setCommonName($commonName)
     {

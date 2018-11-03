@@ -23,7 +23,7 @@ trait HasRelationshipType
     /**
      * @param RelationshipType $relationshipType
      *
-     * @return HasRelationshipType
+     * @return $this
      */
     public function setRelationshipType($relationshipType)
     {

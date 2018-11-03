@@ -23,7 +23,7 @@ trait HasRecurrenceIdentifierRange
     /**
      * @param RecurrenceIdentifierRange $recurrenceIdentifierRange
      *
-     * @return HasRecurrenceIdentifierRange
+     * @return $this
      */
     public function setRecurrenceIdentifierRange($recurrenceIdentifierRange)
     {

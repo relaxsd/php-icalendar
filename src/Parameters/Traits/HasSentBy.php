@@ -23,7 +23,7 @@ trait HasSentBy
     /**
      * @param \Relaxsd\ICalendar\Parameters\SentBy|string $sentBy
      *
-     * @return HasSentBy
+     * @return $this
      */
     public function setSentBy($sentBy)
     {

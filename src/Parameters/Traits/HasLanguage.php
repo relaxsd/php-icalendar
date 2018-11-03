@@ -23,7 +23,7 @@ trait HasLanguage
     /**
      * @param \Relaxsd\ICalendar\Parameters\Language|string $language
      *
-     * @return HasLanguage
+     * @return $this
      */
     public function setLanguage($language)
     {

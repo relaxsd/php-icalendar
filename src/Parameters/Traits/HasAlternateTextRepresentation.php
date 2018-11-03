@@ -23,7 +23,7 @@ trait HasAlternateTextRepresentation
     /**
      * @param \Relaxsd\ICalendar\Parameters\AlternateTextRepresentation|string[][] $alternateTextRepresentation
      *
-     * @return HasAlternateTextRepresentation
+     * @return $this
      */
     public function setAlternateTextRepresentation($alternateTextRepresentation)
     {

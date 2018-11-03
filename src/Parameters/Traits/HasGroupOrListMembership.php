@@ -23,7 +23,7 @@ trait HasGroupOrListMembership
     /**
      * @param \Relaxsd\ICalendar\Parameters\GroupOrListMembership|string[]|string $groupOrListMembership
      *
-     * @return HasGroupOrListMembership
+     * @return $this
      */
     public function setGroupOrListMembership($groupOrListMembership)
     {

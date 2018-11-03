@@ -23,7 +23,7 @@ trait HasInlineEncoding
     /**
      * @param \Relaxsd\ICalendar\Parameters\InlineEncoding|string $inlineEncoding
      *
-     * @return HasInlineEncoding
+     * @return $this
      */
     public function setInlineEncoding($inlineEncoding)
     {

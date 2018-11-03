@@ -22,7 +22,7 @@ trait HasParticipationRole
     /**
      * @param \Relaxsd\ICalendar\Parameters\ParticipationRole|string $participationRole
      *
-     * @return HasParticipationRole
+     * @return $this
      */
     public function setParticipationRole($participationRole)
     {

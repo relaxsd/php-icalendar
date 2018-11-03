@@ -61,7 +61,7 @@ trait HasBinaryValue
      * @param string $binaryValue
      * @param string $encoding
      *
-     * @return \Relaxsd\ICalendar\Values\Traits\HasBinaryValue
+     * @return $this
      */
     public function setBinaryValue($binaryValue, $encoding = 'BASE64')
     {
@@ -82,7 +82,7 @@ trait HasBinaryValue
     /**
      * @param string $encoding
      *
-     * @return HasBinaryValue
+     * @return $this
      */
     public function setEncoding($encoding)
     {

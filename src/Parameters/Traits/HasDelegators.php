@@ -23,7 +23,7 @@ trait HasDelegators
     /**
      * @param \Relaxsd\ICalendar\Parameters\Delegators|string[][] $delegators
      *
-     * @return HasDelegators
+     * @return $this
      */
     public function setDelegators($delegators)
     {

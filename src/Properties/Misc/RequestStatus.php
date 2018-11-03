@@ -153,7 +153,7 @@ class RequestStatus
     /**
      * @param string $statusCode
      *
-     * @return RequestStatus
+     * @return $this
      */
     public function setStatusCode($statusCode)
     {
@@ -172,7 +172,7 @@ class RequestStatus
     /**
      * @param string $statusDescription
      *
-     * @return RequestStatus
+     * @return $this
      */
     public function setStatusDescription($statusDescription)
     {
@@ -191,7 +191,7 @@ class RequestStatus
     /**
      * @param string $extraData
      *
-     * @return RequestStatus
+     * @return $this
      */
     public function setExtraData($extraData)
     {

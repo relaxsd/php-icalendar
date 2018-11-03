@@ -188,12 +188,18 @@ class Duration
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function afterwards()
     {
         $this->addPrefix('+');
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function beforehand()
     {
         $this->addPrefix('-');

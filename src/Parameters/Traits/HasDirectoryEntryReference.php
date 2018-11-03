@@ -23,7 +23,7 @@ trait HasDirectoryEntryReference
     /**
      * @param \Relaxsd\ICalendar\Parameters\DirectoryEntryReference|string $directoryEntryReference
      *
-     * @return HasDirectoryEntryReference
+     * @return $this
      */
     public function setDirectoryEntryReference($directoryEntryReference)
     {

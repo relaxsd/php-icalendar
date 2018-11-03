@@ -21,7 +21,7 @@ trait HasFreeBusyType
     /**
      * @param \Relaxsd\ICalendar\Parameters\FreeBusyType $freeBusyType
      *
-     * @return HasFreeBusyType
+     * @return $this
      */
     public function setFreeBusyType($freeBusyType)
     {

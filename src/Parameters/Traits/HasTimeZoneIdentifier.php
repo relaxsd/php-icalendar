@@ -21,7 +21,7 @@ trait HasTimeZoneIdentifier
     /**
      * @param \Relaxsd\ICalendar\Parameters\TimezoneIdentifier $timezoneIdentifier
      *
-     * @return HasTimeZoneIdentifier
+     * @return $this
      */
     public function setTimezoneIdentifier($timezoneIdentifier)
     {

@@ -23,7 +23,7 @@ trait HasRsvpExpectation
     /**
      * @param \Relaxsd\ICalendar\Parameters\RsvpExpectation|boolean $rsvpExpectation
      *
-     * @return HasRsvpExpectation
+     * @return $this
      */
     public function setRsvpExpectation($rsvpExpectation)
     {
