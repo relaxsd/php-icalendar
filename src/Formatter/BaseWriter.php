@@ -24,6 +24,8 @@ abstract class BaseWriter implements Writer
      * @param string          $name
      * @param array           $params
      * @param string|string[] $value
+     *
+     * @return $this
      */
     protected function writeProperty($name, $params, $value)
     {
@@ -39,6 +41,8 @@ abstract class BaseWriter implements Writer
         }
 
         $this->line("{$name}:{$value}");
+
+        return $this;
     }
 
     /**
