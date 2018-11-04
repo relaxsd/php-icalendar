@@ -55,6 +55,64 @@ use Relaxsd\ICalendar\Values\Traits\HasIanaTokenValue;
  */
 class Method
 {
+
+    // From iTIP standard: https://www.ietf.org/rfc/rfc2446.txt
+
+    /**
+     * PUBLISH:
+     *   - Event:    Post notification of an event. Used primarily as a method of advertising the existence of an event.
+     *   - FreeBusy: Publish unsolicited busy time data.
+     *   - Journal:  Post a journal entry. Used primarily as a method of advertising the existence of a journal entry.
+     *   - To do:    Post notification of a VTODO. Used primarily as a method of advertising the existence of a VTODO.
+     */
+    const PUBLISH = 'PUBLISH';
+    /**
+     * REQUEST:
+     *   - Event:    Make a request for an event. This is an explicit invitation to one or more "Attendees". Event Requests are also used to update or change an existing event. Clients that cannot handle REQUEST may degrade the event to view it as an PUBLISH.
+     *   - FreeBusy: Request busy time data.
+     *   - To do:    Assign a VTODO. This is an explicit assignment to one or more Calendar Users. The REQUEST method is also used to update or change an existing VTODO. Clients that cannot handle REQUEST MAY degrade the method to treat it as a PUBLISH.
+     */
+    const REQUEST = 'REQUEST';
+    /**
+     * REPLY:
+     *   - Event:    Reply to an event request. Clients may set their status ("partstat") to ACCEPTED, DECLINED, TENTATIVE, or DELEGATED.
+     *   - FreeBusy: Reply to a busy time request.
+     *   - To do:    Reply to a VTODO request. Attendees MAY set PARTSTAT to ACCEPTED, DECLINED, TENTATIVE, DELEGATED, PARTIAL, and COMPLETED.
+     */
+    const REPLY = 'REPLY';
+    /**
+     * ADD:
+     *   - Event:    Add one or more instances to an existing event.
+     *   - Journal:  Add one or more instances to an existing journal entry.
+     *   - To do:    Add one or more instances to an existing to-do.
+     */
+    const ADD = 'ADD';
+    /**
+     * CANCEL:
+     *   - Event:    Cancel one or more instances of an existing event.
+     *   - Journal:  Cancel one or more instances of an existing journal entry.
+     *   - To do:    Cancel one or more instances of an existing to-do.
+     */
+    const CANCEL = 'CANCEL';
+    /**
+     * REFRESH:
+     *   - Event:    A request is sent to an "Organizer" by an "Attendee" asking for the latest version of an event to be resent to the requester.
+     *   - To do:    A request sent to a VTODO Organizer asking for the latest version of a VTODO.
+     */
+    const REFRESH = 'REFRESH';
+    /**
+     * COUNTER:
+     *   - Event:    Counter a REQUEST with an alternative proposal, Sent by an "Attendee" to the "Organizer".
+     *   - To do:    Counter a REQUEST with an alternative proposal.
+     */
+    const COUNTER = 'COUNTER';
+    /**
+     * DECLINECOUNTER:
+     *   - Event:    Decline a counter proposal. Sent to an "Attendee" by the "Organizer".
+     *   - To do:    Decline a counter proposal by an Attendee.
+     */
+    const DECLINE_COUNTER = 'DECLINECOUNTER';
+
     use HasXParams,
         HasIanaTokenValue;
 
