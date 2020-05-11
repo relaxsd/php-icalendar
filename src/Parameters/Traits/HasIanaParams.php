@@ -1,6 +1,6 @@
 <?php
 
-namespace Relaxsd\ICalendar\Traits;
+namespace Relaxsd\ICalendar\Parameters\Traits;
 
 /**
  * Trait HasIanaParams
